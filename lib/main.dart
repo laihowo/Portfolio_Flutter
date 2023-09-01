@@ -16,6 +16,13 @@ Future<void> main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
+  await FirebaseAnalytics.instance.logEvent(
+    name: "hello_world",
+    parameters: {
+        "content_type": "text",
+    },
+);
+
   runApp(const MySite());
   // Firebase Analytics Demo
   // runApp(const MyApp());
