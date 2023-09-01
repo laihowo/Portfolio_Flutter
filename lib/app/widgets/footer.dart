@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mysite/changes/links.dart';
-import 'package:mysite/core/util/constants.dart';
+import 'package:mysite/changes/strings.dart';
 
 class Footer extends StatelessWidget {
   const Footer({Key? key}) : super(key: key);
@@ -20,8 +20,8 @@ class Footer extends StatelessWidget {
             const Text("Developed by "),
             InkWell(
               onTap: () => print(gitHub),
-              child: const Text(
-                "Benny LAI",
+              child: Text(
+                myName,
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),

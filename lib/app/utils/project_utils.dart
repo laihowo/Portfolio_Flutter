@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 class ProjectUtils {
   final String banners;
   final String icons;

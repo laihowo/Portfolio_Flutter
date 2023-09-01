@@ -91,8 +91,8 @@ class _ZoomAnimationsState extends State<ZoomAnimations>
               color: Colors.black.withOpacity(0.8),
               image: const DecorationImage(
                 fit: BoxFit.cover,
-                alignment: Alignment.bottomLeft,
-                image: AssetImage('assets/imgs/IMG_0107.png'),
+                alignment: Alignment.topCenter,
+                image: AssetImage('assets/imgs/Avatar.jpg'),
               ),
             ),
           ),
