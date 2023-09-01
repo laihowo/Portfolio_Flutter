@@ -1,4 +1,4 @@
-String hellotag = '''Hello World, Welcome to My Space  ''';
+String hellotag = '''Hello World, Welcome to My Space ''';
 
 String myName = "Benny LAI";
 String myNameTag = "I'm $myName,";
@@ -6,10 +6,6 @@ String myNameTag = "I'm $myName,";
 String animationtxt1 = "Web Developer";
 String animationtxt2 = "";
 String animationtxt3 = "";
-
-String contactHeadding = "Let’s try my service now!";
-String contactSubHeadding =
-    "Let’s work together and make everything super useful.";
 
 String miniDescription =
     "Providing services for programming needs. Join me down below and let's get started!";
@@ -24,8 +20,19 @@ String protfolioSubHeading =
     "Since the beginning of my journey as a web developer, "
     "I have created educational products for business and consumer use. This is a little bit.";
 
-// Unknown
+String contactHeadding = "Let’s try my service now!";
+String contactSubHeadding =
+    "Let’s work together and make everything super useful.";
+
+// About Me
+/*
 const String aboutMeHeadline =
-    'I\'m Sudesh Bandara, a Mobile App developer, Web developer and UI designer.';
+    'I\'m $myName, a Web developer.';
 const String aboutMeDetail =
-    'I\'m a Fresh Graduate as Software Engineer from Quanrt University, UK. I have been developing mobile apps for over 4 years now. I have worked in teams for various startups and helped them in launching their prototypes and got valuable learning experience. Been a CEO/Co-Founder of Onyxsio, Sri Lanka. Currently working as an Associate Software Engineer at Onyxsio.';
+    'I\'m a Fresh Graduate as Software Engineer from Flutter University, UK. '
+    'I have been developing apps for over 4 years now. '
+    'I have worked in teams for various startups and helped them in launching '
+    'their prototypes and got valuable learning experience. '
+    'Been a CEO/Co-Founder of My Company. '
+    'Currently working as an Associate Software Engineer at My Company.';
+*/
