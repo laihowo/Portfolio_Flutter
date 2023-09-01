@@ -41,19 +41,6 @@ class _PortfolioDesktopState extends State<PortfolioDesktop> {
                 .toList(),
           ),
           Space.y(3.w)!,
-          OutlinedButton(
-            onPressed: () => openURL(gitHub),
-            child: const Padding(
-              padding: EdgeInsets.all(8.0),
-              child: Text(
-                'See More',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-          )
         ],
       ),
     );
