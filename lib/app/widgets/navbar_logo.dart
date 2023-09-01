@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mysite/core/configs/configs.dart';
 import 'package:mysite/core/res/responsive.dart';
+import 'package:mysite/changes/strings.dart';
 
 class NavBarLogo extends StatelessWidget {
   const NavBarLogo({Key? key}) : super(key: key);
@@ -20,7 +21,7 @@ class NavBarLogo extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         Text("< ", style: textSty),
-        Text("Sudesh", style: textSty),
+        Text(myName, style: textSty),
         Text(
           Responsive.isDesktop(context) ? " />\t\t" : " />",
           style: textSty,

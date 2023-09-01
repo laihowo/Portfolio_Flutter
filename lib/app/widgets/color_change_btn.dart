@@ -186,52 +186,51 @@ class _DesktopCCButtonState extends State<DesktopCCButton> {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Stack(
-        children: [
-          if (!isHover)
-            Container(
-              height: 65,
-              width: 250,
-              decoration: BoxDecoration(
-                border: Border.all(color: theme.textColor, width: 3),
-                borderRadius: BorderRadius.circular(6),
-              ),
-            ),
-          AnimatedContainer(
-            duration: const Duration(milliseconds: 200),
+      children: [
+        if (!isHover)
+          Container(
             height: 65,
-            width: _animatedWidth,
+            width: 250,
             decoration: BoxDecoration(
+              border: Border.all(color: theme.textColor, width: 3),
               borderRadius: BorderRadius.circular(6),
-              gradient: pinkpurple,
             ),
           ),
-          InkWell(
-            onHover: (value) {
-              setState(() {
-                isHover = !isHover;
-                _animatedWidth = value ? 250 : 0.0;
-              });
-            },
-            onTap: () {
-              setState(() => _animatedWidth = 250);
-              widget.onTap();
-            },
-            child: SizedBox(
-              height: 65,
-              width: 250,
-              child: Center(
-                child: Text(
-                  widget.text,
-                  style: TextStyle(
-                    color: isHover ? whiteColor : theme.textColor,
-                    fontSize: 18,
-                  ),
+        AnimatedContainer(
+          duration: const Duration(milliseconds: 200),
+          height: 65,
+          width: _animatedWidth,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(6),
+            gradient: pinkpurple,
+          ),
+        ),
+        InkWell(
+          onHover: (value) {
+            setState(() {
+              isHover = !isHover;
+              _animatedWidth = value ? 250 : 0.0;
+            });
+          },
+          onTap: () {
+            setState(() => _animatedWidth = 250);
+            widget.onTap();
+          },
+          child: SizedBox(
+            height: 65,
+            width: 250,
+            child: Center(
+              child: Text(
+                widget.text,
+                style: TextStyle(
+                  color: isHover ? whiteColor : theme.textColor,
+                  fontSize: 18,
                 ),
               ),
             ),
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

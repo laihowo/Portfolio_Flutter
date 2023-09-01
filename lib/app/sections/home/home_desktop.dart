@@ -51,7 +51,7 @@ class HomeDesktop extends StatelessWidget {
                     ],
                   ),
                   Space.y(0.5.w)!,
-                  Text(yourname,
+                  Text(myNameTag,
                       style: const TextStyle(
                         fontSize: 50,
                         fontWeight: FontWeight.w600,

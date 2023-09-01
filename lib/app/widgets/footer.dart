@@ -19,13 +19,13 @@ class Footer extends StatelessWidget {
           children: [
             const Text("Developed by "),
             InkWell(
-              onTap: () => openURL(gitHub),
+              onTap: () => print(gitHub),
               child: const Text(
-                " Sudesh Bandara 💙",
+                "Benny LAI",
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
-            const Text(" © 2022"),
+            const Text(" © 2023"),
           ],
         ),
       ),

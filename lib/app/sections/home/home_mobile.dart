@@ -36,7 +36,7 @@ class HomeMobile extends StatelessWidget {
           ),
           // Space.y(1.w)!,
           Text(
-            yourname,
+            myNameTag,
             style: TextStyle(
               fontSize: isFontSize(context, 28),
               fontWeight: FontWeight.w600,

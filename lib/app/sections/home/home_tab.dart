@@ -55,7 +55,7 @@ class HomeTab extends StatelessWidget {
                 ),
                 Space.y(1.w)!,
                 Text(
-                  yourname,
+                  myNameTag,
                   style: TextStyle(
                     fontSize: isFontSize(context, 38),
                     fontWeight: FontWeight.w600,

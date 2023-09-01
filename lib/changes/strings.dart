@@ -1,7 +1,7 @@
-String hellotag = '''Hi there, Welcome to My Space  ''';
+String hellotag = '''Hello World, Welcome to My Space  ''';
 
-String yourname = "I'm Benny LAI,";
-// String hometitle2 = "A Mobile Application\nDeveloper";
+String myName = "Benny LAI";
+String myNameTag = "I'm $myName,";
 
 String animationtxt1 = "Web Developer";
 String animationtxt2 = "";
@@ -9,7 +9,7 @@ String animationtxt3 = "";
 
 String contactHeadding = "Let’s try my service now!";
 String contactSubHeadding =
-    "Let’s work together and make everything super cute and super useful.";
+    "Let’s work together and make everything super useful.";
 
 String miniDescription =
     "Providing services for programming needs. Join me down below and let's get started!";
