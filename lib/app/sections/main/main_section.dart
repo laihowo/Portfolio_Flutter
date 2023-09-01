@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mysite/app/widgets/arrow_on_top.dart';
-import 'package:mysite/app/widgets/color_chage_btn.dart';
+import 'package:mysite/app/widgets/color_change_btn.dart';
 import 'package:mysite/changes/links.dart';
 import 'package:mysite/core/apis/links.dart';
 import 'package:mysite/core/color/colors.dart';

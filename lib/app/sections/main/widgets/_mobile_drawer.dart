@@ -63,8 +63,8 @@ class _MobileDrawer extends StatelessWidget {
                         ),
                       ),
                   Space.y(5.w)!,
-                  ColorChageButton(
-                    text: 'RESUME',
+                  ColorChangeButton(
+                    text: 'Resume',
                     onTap: () {
                       openURL(resume);
                     },

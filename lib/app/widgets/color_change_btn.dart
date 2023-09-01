@@ -3,18 +3,21 @@ import 'package:mysite/core/color/colors.dart';
 import 'package:mysite/core/configs/configs.dart';
 import 'package:mysite/core/res/responsive.dart';
 
-class ColorChageButton extends StatelessWidget {
+class ColorChangeButton extends StatelessWidget {
   final String text;
   final Function() onTap;
-  const ColorChageButton({Key? key, required this.text, required this.onTap})
+  const ColorChangeButton({Key? key, required this.text, required this.onTap})
       : super(key: key);
   @override
   @override
   Widget build(BuildContext context) {
-    return Responsive(
-      desktop: DesktopCCButton(text: text, onTap: onTap),
-      tablet: TabCCButton(text: text, onTap: onTap),
-      mobile: MobileCCButton(text: text, onTap: onTap),
+    return Visibility(
+      visible: false,
+      child: Responsive(
+        desktop: DesktopCCButton(text: text, onTap: onTap),
+        tablet: TabCCButton(text: text, onTap: onTap),
+        mobile: MobileCCButton(text: text, onTap: onTap),
+      ),
     );
   }
 }
@@ -75,7 +78,7 @@ class _MobileCCButtonState extends State<MobileCCButton> {
             width: 125,
             child: Center(
               child: Text(
-                widget.text.toUpperCase(),
+                widget.text,
                 style: TextStyle(
                   color: theme.textColor,
                   fontSize: 13,
@@ -148,7 +151,7 @@ class _TabCCButtonState extends State<TabCCButton> {
               width: 200,
               child: Center(
                 child: Text(
-                  widget.text.toUpperCase(),
+                  widget.text,
                   style: TextStyle(
                     color: theme.textColor,
                     fontSize: 16,
@@ -183,51 +186,52 @@ class _DesktopCCButtonState extends State<DesktopCCButton> {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Stack(
-      children: [
-        if (!isHover)
-          Container(
+        children: [
+          if (!isHover)
+            Container(
+              height: 65,
+              width: 250,
+              decoration: BoxDecoration(
+                border: Border.all(color: theme.textColor, width: 3),
+                borderRadius: BorderRadius.circular(6),
+              ),
+            ),
+          AnimatedContainer(
+            duration: const Duration(milliseconds: 200),
             height: 65,
-            width: 250,
+            width: _animatedWidth,
             decoration: BoxDecoration(
-              border: Border.all(color: theme.textColor, width: 3),
               borderRadius: BorderRadius.circular(6),
+              gradient: pinkpurple,
             ),
           ),
-        AnimatedContainer(
-          duration: const Duration(milliseconds: 200),
-          height: 65,
-          width: _animatedWidth,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(6),
-            gradient: pinkpurple,
-          ),
-        ),
-        InkWell(
-          onHover: (value) {
-            setState(() {
-              isHover = !isHover;
-              _animatedWidth = value ? 250 : 0.0;
-            });
-          },
-          onTap: () {
-            setState(() => _animatedWidth = 250);
-            widget.onTap();
-          },
-          child: SizedBox(
-            height: 65,
-            width: 250,
-            child: Center(
-              child: Text(
-                widget.text.toUpperCase(),
-                style: TextStyle(
-                  color: isHover ? whiteColor : theme.textColor,
-                  fontSize: 18,
+          InkWell(
+            onHover: (value) {
+              setState(() {
+                isHover = !isHover;
+                _animatedWidth = value ? 250 : 0.0;
+              });
+            },
+            onTap: () {
+              setState(() => _animatedWidth = 250);
+              widget.onTap();
+            },
+            child: SizedBox(
+              height: 65,
+              width: 250,
+              child: Center(
+                child: Text(
+                  widget.text,
+                  style: TextStyle(
+                    color: isHover ? whiteColor : theme.textColor,
+                    fontSize: 18,
+                  ),
                 ),
               ),
             ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
