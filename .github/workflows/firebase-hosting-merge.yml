@@ -8,12 +8,21 @@ name: Deploy to Firebase Hosting on merge
       - master
 jobs:
   build_and_deploy:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
+
       - name: Install Flutter SDK
-        uses: actions/setup-flutter@v3
-      - run: flutter pub get && flutter build web
+        uses: subosito/flutter-action@v1
+        with:
+          channel: 'stable'
+
+      - name: Install Dependencies
+        run: flutter pub get
+
+      - name: Build Web
+        run: flutter build web
+
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
