@@ -60,5 +60,6 @@ class DefaultFirebaseOptions {
     authDomain: 'benny-lai.firebaseapp.com',
     databaseURL: 'https://benny-lai.firebaseio.com',
     storageBucket: 'benny-lai.appspot.com',
+    measurementId: "G-CFG3ETW3QD",
   );
 }
