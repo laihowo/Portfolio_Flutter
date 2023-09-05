@@ -5,7 +5,8 @@
             "program": "lib/main.dart",
             "deviceId": "chrome",
             "request": "launch",
-            "type": "dart"
+            "type": "dart",
+            "args": ["--web-port", "8080"],
         }
     ]
 }
