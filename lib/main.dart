@@ -13,8 +13,14 @@ Future<void> main() async {
       options: DefaultFirebaseOptions.currentPlatform,
     );
     FirebaseAnalytics.instance.setAnalyticsCollectionEnabled(true);
-  } catch(e) {
-    print("Failed to initialize Firebase: $e");
+    await FirebaseAnalytics.instance.logEvent(
+      name: 'fire_initialization',
+      parameters: {
+        'content_type': 'system',
+      },
+    );
+  } catch (e) {
+    print('Failed to initialize Firebase: $e');
   }
 
   runApp(const MySite());
