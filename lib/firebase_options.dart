@@ -21,20 +21,11 @@ class DefaultFirebaseOptions {
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for android - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -61,5 +52,36 @@ class DefaultFirebaseOptions {
     databaseURL: 'https://benny-lai.firebaseio.com',
     storageBucket: 'benny-lai.appspot.com',
     measurementId: 'G-CFG3ETW3QD',
+  );
+
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'AIzaSyAcoUNV5tJMy5uPEKaqTdr3UGugtAnX6R4',
+    appId: '1:275411121861:android:82d67e9fcca28054c7a2ac',
+    messagingSenderId: '275411121861',
+    projectId: 'benny-lai',
+    databaseURL: 'https://benny-lai.firebaseio.com',
+    storageBucket: 'benny-lai.appspot.com',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyD8PAl5QrnoKZ5yPuWpENWyiGg-yNaLD9o',
+    appId: '1:275411121861:ios:1f08b345ac3b2f85c7a2ac',
+    messagingSenderId: '275411121861',
+    projectId: 'benny-lai',
+    databaseURL: 'https://benny-lai.firebaseio.com',
+    storageBucket: 'benny-lai.appspot.com',
+    iosClientId: '275411121861-qnk2ioni78bppiaob5t3l249iadllt1g.apps.googleusercontent.com',
+    iosBundleId: 'com.example.mysite',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyD8PAl5QrnoKZ5yPuWpENWyiGg-yNaLD9o',
+    appId: '1:275411121861:ios:1f08b345ac3b2f85c7a2ac',
+    messagingSenderId: '275411121861',
+    projectId: 'benny-lai',
+    databaseURL: 'https://benny-lai.firebaseio.com',
+    storageBucket: 'benny-lai.appspot.com',
+    iosClientId: '275411121861-qnk2ioni78bppiaob5t3l249iadllt1g.apps.googleusercontent.com',
+    iosBundleId: 'com.example.mysite',
   );
 }

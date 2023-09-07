@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "275411121861",
+    "firebase_url": "https://benny-lai.firebaseio.com",
+    "project_id": "benny-lai",
+    "storage_bucket": "benny-lai.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275411121861:android:82d67e9fcca28054c7a2ac",
+        "android_client_info": {
+          "package_name": "com.example.mysite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "275411121861-4251jeic7da08quf4jog0jt8oeelslh7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcoUNV5tJMy5uPEKaqTdr3UGugtAnX6R4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "275411121861-4251jeic7da08quf4jog0jt8oeelslh7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

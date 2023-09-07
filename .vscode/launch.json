@@ -6,7 +6,17 @@
             "deviceId": "chrome",
             "request": "launch",
             "type": "dart",
-            "args": ["--web-port", "8080"],
+            "args": [
+                "--web-port",
+                "8080"
+            ]
+        },
+        {
+            "name": "Flutter (macOS)",
+            "program": "lib/main.dart",
+            "deviceId": "macos",
+            "request": "launch",
+            "type": "dart"
         }
     ]
 }
