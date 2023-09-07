@@ -47,7 +47,7 @@ class HomeMobile extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               Text(
-                "A ",
+                'A ',
                 style: TextStyle(
                   fontSize: isFontSize(context, 18),
                   fontWeight: FontWeight.w400,
@@ -68,7 +68,7 @@ class HomeMobile extends StatelessWidget {
               ColorChangeButton(
                 text: 'CV',
                 onTap: () {
-                  html.window.open(resume, "pdf");
+                  html.window.open(resume, 'pdf');
                 },
               ),
               const EntranceFader(

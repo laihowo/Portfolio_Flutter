@@ -50,7 +50,7 @@ class NoConnectionErorr extends StatelessWidget {
             // LoadingAnimationWidget.staggeredDotsWave(
             //     color: primaryColor, size: 50.0),
             // SizedBox(height: 3.h),
-            Text("Connection failed!"),
+            Text('Connection failed!'),
           ],
         ),
       ),

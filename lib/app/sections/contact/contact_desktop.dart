@@ -21,11 +21,11 @@ class ContactDesktop extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: size.width / 8),
       child: Column(
         children: [
-          const CustomSectionHeading(text: "\nGet in Touch"),
+          const CustomSectionHeading(text: '\nGet in Touch'),
           Space.y(1.w)!,
           const CustomSectionSubHeading(
             text:
-                "If you want to try my services, you can contact me at the links below.",
+                'If you want to try my services, you can contact me at the links below.',
           ),
           Space.y(2.w)!,
           Container(

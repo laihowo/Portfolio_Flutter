@@ -69,7 +69,7 @@ class HomeTab extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Text(
-                        "A ",
+                        'A ',
                         style: TextStyle(
                           fontSize: isFontSize(context, 24),
                           fontWeight: FontWeight.w400,
@@ -97,7 +97,7 @@ class HomeTab extends StatelessWidget {
                 ColorChangeButton(
                   text: 'CV',
                   onTap: () {
-                    html.window.open(resume, "pdf");
+                    html.window.open(resume, 'pdf');
                   },
                 ),
               ],
