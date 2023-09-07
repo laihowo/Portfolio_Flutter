@@ -46,7 +46,7 @@ class ContactDesktop extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          contactHeadding,
+                          contactHeading,
                           style: TextStyle(
                             height: 1.2,
                             fontSize: 8.sp,
@@ -56,7 +56,7 @@ class ContactDesktop extends StatelessWidget {
 
                         Space.y(1.w)!,
                         Text(
-                          contactSubHeadding,
+                          contactSubHeading,
                           style: const TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.w100,

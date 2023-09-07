@@ -41,7 +41,7 @@ class HomeTab extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      hellotag,
+                      helloTag,
                       style: AppText.h3!
                           .copyWith(fontSize: isFontSize(context, 18)),
                     ),

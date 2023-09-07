@@ -26,7 +26,7 @@ class _PortfolioDesktopState extends State<PortfolioDesktop> {
         children: [
           const CustomSectionHeading(text: '\nProjects'),
           Space.y(1.w)!,
-          CustomSectionSubHeading(text: protfolioSubHeading),
+          CustomSectionSubHeading(text: portfolioSubHeading),
           Space.y(2.w)!,
           Wrap(
             alignment: WrapAlignment.start,

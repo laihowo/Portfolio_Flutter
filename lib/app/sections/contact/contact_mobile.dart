@@ -17,11 +17,11 @@ class ContactMobileTab extends StatelessWidget {
     return Column(
       children: [
         Space.y(10.w)!,
-        CustomSectionHeading(text: contactHeadding),
+        CustomSectionHeading(text: contactHeading),
         Space.y(3.w)!,
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 10.w),
-          child: CustomSectionSubHeading(text: contactSubHeadding),
+          child: CustomSectionSubHeading(text: contactSubHeading),
         ),
         Space.y(5.w)!,
         InkWell(

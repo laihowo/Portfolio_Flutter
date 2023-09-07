@@ -37,7 +37,7 @@ class HomeDesktop extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
-                      Text(hellotag,
+                      Text(helloTag,
                           style: const TextStyle(
                             fontSize: 25,
                             fontWeight: FontWeight.w100,

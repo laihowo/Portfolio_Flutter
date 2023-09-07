@@ -11,7 +11,4 @@ const String linkedin = 'https://linkedin.com/in/laihowo';
 // Email Link
 const String email = 'mailto:howo0707@gmail.com';
 
-const String profileImage =
-    'https://placehold.co/600x400/black/white?text=Hello';
-
 const String whatsapp = 'https://api.whatsapp.com/';

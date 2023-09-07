@@ -1,11 +1,11 @@
-String hellotag = '''Hello World, Welcome to My Space  ''';
+String helloTag = '''Hello World, Welcome to My Space  ''';
 
 String myName = 'Benny LAI';
 String myNameTag = "I'm $myName,";
 
-String animationtxt1 = 'Web Developer';
-String animationtxt2 = '';
-String animationtxt3 = '';
+String animationTxt1 = 'Web Developer';
+String animationTxt2 = '';
+String animationTxt3 = '';
 
 String miniDescription =
     "Providing services for programming needs. Join me down below and let's get started!";
@@ -16,12 +16,12 @@ String servicesSubHeading =
     'to create educational products for both business and consumer use. '
     'I offer a wide range of services, including programming.';
 
-String protfolioSubHeading =
+String portfolioSubHeading =
     'Since the beginning of my journey as a web developer, '
     'I have created educational products for business and consumer use. This is a little bit.';
 
-String contactHeadding = 'Let’s try my service now!';
-String contactSubHeadding =
+String contactHeading = 'Let’s try my service now!';
+String contactSubHeading =
     'Let’s work together and make everything super useful.';
 
 // About Me
