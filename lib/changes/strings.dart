@@ -1,4 +1,4 @@
-String helloTag = '''Hello World, Welcome to My Space  ''';
+String helloTag = '''\nHello World, Welcome to My Space  ''';
 
 String myName = 'Benny LAI';
 String myNameTag = "I'm $myName,";
@@ -25,8 +25,8 @@ String contactHeading = 'Let’s try my service now!';
 String contactSubHeading =
     'Let’s work together and make everything super useful.';
 
-String customSectionHeading = '\nGet in Touch';
-String customSectionSubHeading =
+String contactSectionHeading = '\nGet in Touch';
+String contactSectionSubHeading =
     'If you want to try my services, you can contact me at the links below.';
 
 // About Me

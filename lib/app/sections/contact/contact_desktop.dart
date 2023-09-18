@@ -21,10 +21,10 @@ class ContactDesktop extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: size.width / 8),
       child: Column(
         children: [
-          CustomSectionHeading(text: customSectionHeading),
+          CustomSectionHeading(text: contactSectionHeading),
           Space.y(1.w)!,
           CustomSectionSubHeading(
-            text: customSectionSubHeading,
+            text: contactSectionSubHeading,
           ),
           Space.y(2.w)!,
           Container(
