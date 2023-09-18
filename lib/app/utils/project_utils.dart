@@ -22,7 +22,7 @@ List<ProjectUtils> projectUtils = [
     links: 'https://github.com/',
   ),
   ProjectUtils(
-    banners: 'assets/imgs/1.png',
+    banners: 'assets/imgs/01.png',
     icons: 'assets/imgs/flutter.png',
     titles: 'Badaboom',
     description: 'This is a educational app by using Vue.js.',

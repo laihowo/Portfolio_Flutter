@@ -96,7 +96,6 @@ class MainPage extends StatelessWidget {
               if (!state.isDarkThemeOn)
                 Align(
                   alignment: Alignment.center,
-                  // BG01.png
                   child: Image.asset(
                     'assets/imgs/NightSky.jpg',
                     opacity: const AlwaysStoppedAnimation<double>(0.2),
