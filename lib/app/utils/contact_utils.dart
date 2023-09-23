@@ -8,11 +8,11 @@ class ContactUtils {
 List<ContactUtils> contactUtils = [
   ContactUtils(
       url: 'https://github.com/laihowo',
-      icon: 'https://img.icons8.com/ios-glyphs/64/000000/github.png'),
+      icon: 'https://img.icons8.com/small/64/github.png'),
   ContactUtils(
       url: 'https://linkedin.com/in/laihowo',
-      icon: 'https://img.icons8.com/ios-filled/64/000000/linkedin.png'),
+      icon: 'https://img.icons8.com/small/64/linkedin.png'),
   ContactUtils(
       url: 'mailto:howo0707@gmail.com',
-      icon: 'https://img.icons8.com/ios-glyphs/64/000000/email.png'),
+      icon: 'https://img.icons8.com/office/64/email.png'),
 ];

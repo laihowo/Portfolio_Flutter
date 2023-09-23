@@ -14,23 +14,23 @@ class ServicesUtils {
 List<ServicesUtils> servicesUtils = [
   ServicesUtils(
     name: 'Vue.js',
-    icon: 'assets/icons/android.svg',
+    icon: 'https://img.icons8.com/color/64/vue-js.png',
     description:
-        "Are you interested in the great app? Let's make it a reality.",
-    tool: ['Quasar', 'jQuery'],
+        "Are you interested in the great website? Let's make it a reality.",
+    tool: ['Quasar', 'HTML CSS JavaScript'],
   ),
   ServicesUtils(
     name: 'Firebase',
-    icon: 'assets/icons/apple.svg',
+    icon: 'https://img.icons8.com/color/64/firebase.png',
     description:
-        "Are you interested in the great app? Let's make it a reality.",
+        "Are you interested in the great backend? Let's make it a reality.",
     tool: ['Real Time Database', 'Cloud Function'],
   ),
   ServicesUtils(
-    name: 'Web Development',
-    icon: 'assets/icons/website.svg',
+    name: 'Flutter',
+    icon: 'https://img.icons8.com/color/64/flutter.png',
     description:
-        "Do you have an idea for your next great website? Let's make it a reality.",
-    tool: ['Flutter', 'HTML, CSS, JavaScript'],
+        "Do you have an idea for your next great platform? Let's make it a reality.",
+    tool: ['Cross Platform Development', 'Dart'],
   ),
 ];
