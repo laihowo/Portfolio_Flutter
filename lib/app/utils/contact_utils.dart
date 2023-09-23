@@ -1,5 +1,3 @@
-import 'package:mysite/changes/links.dart';
-
 class ContactUtils {
   final String url;
   final String icon;
@@ -9,12 +7,12 @@ class ContactUtils {
 
 List<ContactUtils> contactUtils = [
   ContactUtils(
-      url: gitHub,
+      url: 'https://github.com/laihowo',
       icon: 'https://img.icons8.com/ios-glyphs/64/000000/github.png'),
   ContactUtils(
-      url: linkedin,
+      url: 'https://linkedin.com/in/laihowo',
       icon: 'https://img.icons8.com/ios-filled/64/000000/linkedin.png'),
   ContactUtils(
-      url: email,
+      url: 'mailto:howo0707@gmail.com',
       icon: 'https://img.icons8.com/ios-glyphs/64/000000/email.png'),
 ];

@@ -1,14 +1,3 @@
-// CV
-const String resume =
-    'https://drive.google.com/file/d/1bDNNrkQtNVJbXcdwMSx0crQQvAF_nMwV/view?usp=sharing';
+const String resume = 'https://drive.google.com/file/d/{id}/view?usp=sharing';
 
-// Github Link
-const String gitHub = 'https://github.com/laihowo';
-
-// LinkedIn Link
-const String linkedin = 'https://linkedin.com/in/laihowo';
-
-// Email Link
-const String email = 'mailto:howo0707@gmail.com';
-
-const String whatsapp = 'https://api.whatsapp.com/';
+const String goAction = 'https://api.whatsapp.com/';

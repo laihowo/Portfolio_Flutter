@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mysite/app/widgets/custom_outline.dart';
 import 'package:mysite/core/theme/app_theme.dart';
+import 'package:mysite/changes/img.dart';
 
 class ZoomAnimations extends StatefulWidget {
   const ZoomAnimations({Key? key}) : super(key: key);
@@ -92,7 +93,7 @@ class _ZoomAnimationsState extends State<ZoomAnimations>
               image: const DecorationImage(
                 fit: BoxFit.cover,
                 alignment: Alignment.topCenter,
-                image: AssetImage('assets/imgs/Avatar.jpg'),
+                image: AssetImage(StaticImage.avatar),
               ),
             ),
           ),

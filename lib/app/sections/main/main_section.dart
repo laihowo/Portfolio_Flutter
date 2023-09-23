@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mysite/app/widgets/arrow_on_top.dart';
 import 'package:mysite/app/widgets/color_change_btn.dart';
 import 'package:mysite/changes/links.dart';
+import 'package:mysite/changes/img.dart';
 import 'package:mysite/core/apis/links.dart';
 import 'package:mysite/core/color/colors.dart';
 import 'package:mysite/core/configs/app.dart';
@@ -97,7 +98,7 @@ class MainPage extends StatelessWidget {
                 Align(
                   alignment: Alignment.center,
                   child: Image.asset(
-                    'assets/imgs/NightSky.jpg',
+                    StaticImage.nightSky,
                     opacity: const AlwaysStoppedAnimation<double>(0.2),
                     width: width,
                     height: height,

@@ -65,22 +65,25 @@ class ContactDesktop extends StatelessWidget {
                         // SizedBox(height: AppDimensions.space(3)),
                       ],
                     ),
-                    InkWell(
-                      onTap: () => openURL(whatsapp),
-                      child: Container(
-                        padding: const EdgeInsets.symmetric(
-                            vertical: 5, horizontal: 20),
-                        decoration: BoxDecoration(
-                            gradient: buttonGradi,
-                            // border: Border.all(
-                            //     width: 2.0, color: theme.primaryColor),
-                            borderRadius: BorderRadius.circular(10)),
-                        child: const Text(
-                          'Get Started',
-                          style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.w500,
-                            color: textColor,
+                    Visibility(
+                      visible: false,
+                      child: InkWell(
+                        onTap: () => openURL(goAction),
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(
+                              vertical: 5, horizontal: 20),
+                          decoration: BoxDecoration(
+                              gradient: buttonGradi,
+                              // border: Border.all(
+                              //     width: 2.0, color: theme.primaryColor),
+                              borderRadius: BorderRadius.circular(10)),
+                          child: const Text(
+                            'Go',
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w500,
+                              color: textColor,
+                            ),
                           ),
                         ),
                       ),

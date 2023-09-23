@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mysite/changes/links.dart';
 import 'package:mysite/changes/strings.dart';
 
 class Footer extends StatelessWidget {
@@ -19,7 +18,6 @@ class Footer extends StatelessWidget {
           children: [
             const Text('Developed by '),
             InkWell(
-              onTap: () => print(gitHub),
               child: Text(
                 myName,
                 style: TextStyle(fontWeight: FontWeight.bold),

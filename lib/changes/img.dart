@@ -1,6 +1,7 @@
 class StaticImage {
   static const String hi = 'assets/gif/hi.gif';
 
-  // Image
-  static const String avatar = 'assets/imgs/Avatar.png';
+  static const String avatar = 'assets/img/Avatar.jpg';
+
+  static const String nightSky = 'assets/img/NightSky.jpg';
 }
