@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sizer/sizer.dart';
 
+import 'package:mysite/app/sections/admin/admin.dart';
 import 'package:mysite/changes/strings.dart';
 import 'package:mysite/core/configs/configs.dart';
 import 'package:mysite/core/configs/connection/bloc/connected_bloc.dart';
@@ -32,8 +33,11 @@ class MySite extends StatelessWidget {
               debugShowCheckedModeBanner: false,
               title: myName,
               theme: AppTheme.themeData(!state.isDarkThemeOn, context),
-              initialRoute: '/',
-              routes: {'/': (context) => const NChecking()},
+              initialRoute: 'admin',
+              routes: {
+                '/': (context) => const NChecking(),
+                'admin': (context) => const AdminApp(),
+              },
             );
           });
         }),
