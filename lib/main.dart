@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_strategy/url_strategy.dart';
 import 'my_site.dart';
 
 import 'package:firebase_core/firebase_core.dart';
@@ -22,6 +23,9 @@ Future<void> main() async {
   } catch (e) {
     print('Failed to initialize Firebase: $e');
   }
+
+  // Remove the leading hash # from the URL
+  setPathUrlStrategy();
 
   runApp(const MySite());
 }

@@ -7,7 +7,7 @@ class AdminPanel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var theme = Theme.of(context);
+    //var theme = Theme.of(context);
     return const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -32,23 +32,8 @@ class MyForm extends StatefulWidget {
 
 class _MyFormState extends State<MyForm> {
   final _formKey = GlobalKey<FormState>();
-
-  Future<void> postDataToFirestore() async {
-    // Create an instance of the Firestore database.
-    final FirebaseFirestore firestore = FirebaseFirestore.instance;
-
-    final city = <String, String>{
-      'name': 'Los Angeles',
-      'state': 'CA',
-      'country': 'USA'
-    };
-
-    firestore
-        .collection('cities')
-        .doc('LA')
-        .set(city)
-        .onError((e, _) => print('Error writing document: $e'));
-  }
+  final _nameController = TextEditingController(text: myName);
+  final _animationTxtController = TextEditingController(text: animationTxt1);
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +42,7 @@ class _MyFormState extends State<MyForm> {
       child: Column(
         children: [
           TextFormField(
-            controller: TextEditingController(text: myName),
+            controller: _nameController,
             decoration: InputDecoration(
               labelText: 'My Name',
             ),
@@ -71,7 +56,7 @@ class _MyFormState extends State<MyForm> {
           ),
           const SizedBox(height: 20),
           TextFormField(
-            controller: TextEditingController(text: animationTxt1),
+            controller: _animationTxtController,
             decoration: InputDecoration(
               labelText: 'Animation Text',
             ),
@@ -87,8 +72,8 @@ class _MyFormState extends State<MyForm> {
           ElevatedButton(
             onPressed: () {
               if (_formKey.currentState!.validate()) {
-                // Submit the form data.
-                postDataToFirestore();
+                // Submit the form data to Firestore.
+                _submitFormDataToFirestore();
               }
             },
             child: const Text('Submit'),
@@ -96,5 +81,27 @@ class _MyFormState extends State<MyForm> {
         ],
       ),
     );
+  }
+
+  Future<void> _submitFormDataToFirestore() async {
+    // Get the form data.
+    final String name = _nameController.text;
+    final String animationTxt = _animationTxtController.text;
+
+    // Create an instance of the Firestore database.
+    final FirebaseFirestore firestore = FirebaseFirestore.instance;
+
+    // Create a new document in the `users` collection.
+    final DocumentReference documentReference =
+        firestore.collection('users').doc('admin');
+
+    // Set the data of the document.
+    final Map<String, String> data = {
+      'Name': name,
+      'Animation_Text': animationTxt,
+    };
+
+    // Save the document.
+    await documentReference.set(data);
   }
 }

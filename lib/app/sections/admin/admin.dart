@@ -1,22 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mysite/app/sections/admin/admin_panel.dart';
 
-class AdminApp extends StatelessWidget {
-  const AdminApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Namer App',
-      theme: ThemeData(
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
-      ),
-      home: const AdminPage(),
-    );
-  }
-}
-
 class AdminPage extends StatefulWidget {
   const AdminPage({super.key});
 

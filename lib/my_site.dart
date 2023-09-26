@@ -30,13 +30,13 @@ class MySite extends StatelessWidget {
         child: BlocBuilder<ThemeCubit, ThemeState>(builder: (context, state) {
           return Sizer(builder: (context, orientation, deviceType) {
             return MaterialApp(
-              debugShowCheckedModeBanner: false,
               title: myName,
               theme: AppTheme.themeData(!state.isDarkThemeOn, context),
-              initialRoute: 'admin',
+              debugShowCheckedModeBanner: false,
+              initialRoute: '/admin',
               routes: {
                 '/': (context) => const NChecking(),
-                'admin': (context) => const AdminApp(),
+                '/admin': (context) => AdminPage(),
               },
             );
           });
