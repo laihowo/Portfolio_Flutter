@@ -1,3 +1,26 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+
+Future<String> getDataFromFirestore() async {
+  // Create an instance of the Firestore database.
+  final FirebaseFirestore firestore = FirebaseFirestore.instance;
+
+  // Get a reference to the `users` collection.
+  final CollectionReference usersCollection = firestore.collection('users');
+
+  // Get a reference to the document with the ID `YOUR_DOCUMENT_ID`.
+  final DocumentReference userDocumentReference = usersCollection.doc('admin');
+
+  // Get the data of the document.
+  final DocumentSnapshot userDocumentSnapshot =
+      await userDocumentReference.get();
+
+  // Use the data of the document.
+  final String myName = userDocumentSnapshot['Name'];
+  final String animationTxt1 = userDocumentSnapshot['Animation_Text'];
+
+  return myName;
+}
+
 String helloTag = '''\nHello World, Welcome to My Space  ''';
 
 String myName = 'Benny LAI';

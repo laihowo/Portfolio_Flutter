@@ -7,7 +7,6 @@ class AdminPanel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //var theme = Theme.of(context);
     return const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

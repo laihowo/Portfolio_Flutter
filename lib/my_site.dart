@@ -33,7 +33,7 @@ class MySite extends StatelessWidget {
               title: myName,
               theme: AppTheme.themeData(!state.isDarkThemeOn, context),
               debugShowCheckedModeBanner: false,
-              initialRoute: '/admin',
+              initialRoute: '/',
               routes: {
                 '/': (context) => const NChecking(),
                 '/admin': (context) => AdminPage(),
